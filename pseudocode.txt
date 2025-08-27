@@ -1,0 +1,49 @@
+Pseudocode – UX / HRI Projects
+
+A) Telepresence Control Dashboard (ROS 2 + Gazebo)
+-------------------------------------------------
+UI_DASHBOARD:
+  subscribe: /robot/status, /robot/pose, /camera/front, /battery/state
+  publish:   /teleop/cmd_vel, /teleop/camera_tilt, /mission/waypoints
+  ...
+
+B) Robot Fleet Visualization
+-----------------------------
+FLEET_AGGREGATOR:
+  subscribe: /fleet/*/status, /fleet/*/pose, /fleet/*/health
+  ...
+
+C) Quantum Sensor Visualization (|ψ|²)
+--------------------------------------
+SENSOR_NODE (quantum_gz_sensor):
+  sample environment → raw_complex_field ψ(x,y,z,t)
+  ...
+
+D) User Feedback Integration
+-----------------------------
+TRIAL_RUNNER:
+  scenario := select(test_map, robot_model, task)
+  ...
+
+E) ROS 2 UX Enhancements
+------------------------
+LAUNCHER_CLI:
+  args: --backend (sim|real), --robot R1..Rn
+  ...
+
+F) Core ROS 2 Nodes
+-------------------
+perception_node.py:
+  subscribe: /camera/image, /lidar/points
+  ...
+
+sim_node.py:
+  manage Gazebo world lifecycle (reset, step, seed)
+  ...
+
+G) Design System & Collaboration
+--------------------------------
+DESIGN_SYSTEM (ROS 2 Dashboard):
+  tokens: spacing, color, typography, alerts
+  components: MiniMap, SensorPanel, CommandBar, AlertBanner, RobotCard
+  ...

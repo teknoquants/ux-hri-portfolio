@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Roger Cooperman — UX & HRI Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UX & Human-Robot Interaction portfolio — telepresence, fleet visualization, design systems, and real-time robotics UIs.">
+  <style>
+    :root {
+      --bg: #0b0f17; --card:#111726; --text:#e6ecff; --muted:#9bb0e8; --accent:#7aa2ff; --line:#1d2540;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{opacity:.9}
+    .wrap{max-width:1024px;margin:0 auto;padding:32px 20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:48px;height:48px;border-radius:50%;background:#1b2338;border:1px solid var(--line)}
+    h1{font-size:26px;margin:0}
+    nav a{margin:0 10px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#0d1426}
+    section{margin:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    @media(min-width:800px){.card.half{grid-column:span 6}}
+    h2{font-size:20px;margin:0 0 8px}
+    h3{font-size:18px;margin:16px 0 6px}
+    p{margin:8px 0}
+    .pill{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;margin:2px 4px 0 0;font-size:12px;color:var(--muted)}
+    .small{color:var(--muted);font-size:14px}
+    footer{margin:40px 0;color:var(--muted)}
+    .hero{display:flex;flex-direction:column;gap:10px}
+    .bullets{margin:8px 0 0 18px}
+    .case-meta{margin-top:8px}
+    .case-meta .pill{border-color:#273055}
+    .split{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:960px){.split{grid-template-columns:1.4fr .9fr}}
+    .imgph{background:linear-gradient(135deg,#1a2240,#101629);height:180px;border-radius:12px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:#a9b8f7}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;background:#0d1426;border:1px solid var(--line);padding:2px 6px;border-radius:6px}
+    .hr{height:1px;background:var(--line);margin:16px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar"></div>
+        <div>
+          <h1>Roger Cooperman</h1>
+          <div class="small">UX & Human‑Robot Interaction • ROS 2 • Real‑time Visualization</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#system">Design System</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="split">
+      <div class="hero card">
+        <h2>Designing intuitive, real‑time interfaces for robots in the field</h2>
+        <p>HRI designer with robotics depth. I build 2D/3D telepresence UIs, fleet dashboards, and visualization tools that make robot operation clear, safe, and efficient. Comfortable moving from Figma flows to ROS 2/Gazebo prototypes and shipping systems with engineers.</p>
+        <div>
+          <span class="pill">HRI</span>
+          <span class="pill">Design Systems</span>
+          <span class="pill">ROS 2</span>
+          <span class="pill">Gazebo / Ignition</span>
+          <span class="pill">Figma</span>
+          <span class="pill">Real‑time Viz</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Highlights</h3>
+        <ul class="bullets">
+          <li>Defined a reusable design language for ROS 2 dashboards and control views.</li>
+          <li>Ran simulation‑based user studies; fed findings into iterative UI improvements.</li>
+          <li>Prototyped telepresence flows in Figma + RViz; tested with operators.</li>
+          <li>Bridged Gazebo/Ignition into ROS 2 for realistic HRI trials.</li>
+        </ul>
+        <div class="hr"></div>
+        <div class="small">This site is optimized for GitHub Pages. Edit <span class="kbd">index.html</span> to update content.</div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <article class="card half">
+          <div class="imgph">Telepresence UI (placeholder image)</div>
+          <h3>Telepresence Control Dashboard</h3>
+          <p><strong>Challenge:</strong> Operators struggled with remote navigation context switching.</p>
+          <p><strong>Approach:</strong> Task analysis → Figma prototypes → ROS 2 + RViz prototype → iterative tests.</p>
+          <p><strong>Outcome:</strong> Clearer state cues and streamlined controls; faster task execution and fewer errors.</p>
+          <div class="case-meta">
+            <span class="pill">Figma</span><span class="pill">ROS 2</span><span class="pill">RViz</span><span class="pill">HRI</span>
+          </div>
+        </article>
+
+        <article class="card half">
+          <div class="imgph">Fleet Viz (placeholder image)</div>
+          <h3>Robot Fleet Visualization</h3>
+          <p><strong>Challenge:</strong> Limited situational awareness across multiple robots.</p>
+          <p><strong>Approach:</strong> Operator interviews → information architecture → density‑aware layout → clickable prototypes.</p>
+          <p><strong>Outcome:</strong> Unified status/alerts and map overlays improved monitoring confidence.</p>
+          <div class="case-meta">
+            <span class="pill">2D + 3D UI</span><span class="pill">Real‑time Data</span><span class="pill">Maps</span>
+          </div>
+        </article>
+
+        <article class="card half">
+          <div class="imgph">Quantum Viz (placeholder image)</div>
+          <h3>Quantum Sensor Visualization</h3>
+          <p><strong>Challenge:</strong> Make |ψ|² data interpretable for non‑experts.</p>
+          <p><strong>Approach:</strong> Visual grammar for probability fields → color + form tests → 3D widgets.</p>
+          <p><strong>Outcome:</strong> Intuitive perception panel for operators and reviewers.</p>
+          <div class="case-meta">
+            <span class="pill">3D</span><span class="pill">Visualization</span><span class="pill">ROS 2</span>
+          </div>
+        </article>
+
+        <article class="card half">
+          <div class="imgph">HRI Prototypes (placeholder)</div>
+          <h3>Simulation‑based HRI Prototypes</h3>
+          <p><strong>Challenge:</strong> Validate interaction patterns before field trials.</p>
+          <p><strong>Approach:</strong> Rapid prototyping with Gazebo/ros_gz_bridge; feedback loops with operators.</p>
+          <p><strong>Outcome:</strong> Reduced integration risk; faster iteration cycles.</p>
+          <div class="case-meta">
+            <span class="pill">Gazebo</span><span class="pill">ros_gz_bridge</span><span class="pill">UX Research</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="system">
+      <h2>Design System</h2>
+      <div class="card">
+        <p>Reusable components for robotics UIs: status chips, map overlays, latency‑aware graph panels, robot detail sheets, and error/health banners. Documented interaction patterns and accessibility guidance tailored to real‑time data and operator workflows.</p>
+        <div>
+          <span class="pill">Components</span>
+          <span class="pill">Guidelines</span>
+          <span class="pill">Tokens</span>
+          <span class="pill">Docs</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>I design and prototype interfaces that make sophisticated robotic systems understandable and safe to use. My background spans UX, HRI, and embedded robotics—letting me communicate with engineers while advocating for users.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:roger.cooperman@teknoquants.com">roger.cooperman@teknoquants.com</a></p>
+        <p>CV: <a href="#" target="_blank">Download</a> • GitHub: <a href="https://github.com/rogercooperman" target="_blank">github.com/rogercooperman</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Roger Cooperman — UX & HRI
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
